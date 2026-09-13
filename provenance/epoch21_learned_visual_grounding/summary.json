@@ -1,0 +1,50 @@
+{
+  "best_checkpoint": "/mnt/c/Users/s-vgu/Documents/Codex/2026-05-14/i-have-an-ai-project-in/handwriting_pipeline_current/training_data/churro_learned_visual_grounding_v1/train/checkpoint-epoch-21",
+  "best_validation_loss": 0.4288119962986778,
+  "history": [
+    {
+      "epoch": 21,
+      "train_loss": 0.4340918096915153,
+      "train_cross_entropy": 0.32055239461874235,
+      "train_first_occurrence_loss": 0.4266572139834933,
+      "first_occurrence_examples": 393,
+      "first_occurrence_positions": 165707,
+      "first_occurrence_boosted_positions": 44377,
+      "first_occurrence_boost_fraction": 0.26780401552137206,
+      "train_anti_eos_loss": 0.0,
+      "train_anti_eos_violation_rate": 0.0,
+      "train_anti_close_loss": 0.0,
+      "anti_close_examples": 0,
+      "anti_close_positions": 0,
+      "train_anti_close_violation_rate": 0.0,
+      "train_visual_contrast_loss": 0.1650732196867466,
+      "train_correct_wrong_nll_margin": 1.3859361049819128,
+      "visual_contrast_examples": 177,
+      "visual_contrast_positions": 74035,
+      "visual_contrast_violation_rate": 0.5299925714767445,
+      "corrupted_prefix_examples": 58,
+      "corrupted_prefix_tokens": 321,
+      "trained_pages": 393,
+      "skipped_overlength": 5,
+      "validation_loss": 0.4288119962986778,
+      "validation_task_losses": {
+        "page": 0.4288119962986778
+      },
+      "validation_diagnostics": {
+        "cross_entropy": 0.31007736614521814,
+        "first_occurrence_loss": 0.4288119962986778,
+        "first_occurrence_positions": 6576,
+        "first_occurrence_boosted_positions": 1852,
+        "first_occurrence_boost_fraction": 0.2816301703163017,
+        "anti_eos_loss": 0.0,
+        "anti_eos_positions": 0,
+        "anti_eos_violation_rate": 0.0,
+        "anti_close_loss": 0.0,
+        "anti_close_positions": 0,
+        "anti_close_violation_rate": 0.0
+      },
+      "learning_rate": 0.0
+    }
+  ],
+  "stopped_after_epochs": 1
+}

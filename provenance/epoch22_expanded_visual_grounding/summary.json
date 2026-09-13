@@ -1,0 +1,29 @@
+{
+  "schema_version": "churro_visual_grounding_expanded.v2",
+  "train_pages": 2500,
+  "validation_pages": 250,
+  "train_items": 756,
+  "validation_items": 80,
+  "protected_eval_pages": 100,
+  "protected_eval_items": 100,
+  "protected_item_overlap": 0,
+  "train_validation_item_overlap": 0,
+  "unique_page_images": 2750,
+  "train_provenance": {
+    "official_LOC_page_metadata_description": 2273,
+    "official_LOC_per_page_plain_text": 156,
+    "official_LOC_TEI_pageinfo": 71
+  },
+  "validation_provenance": {
+    "official_LOC_per_page_plain_text": 23,
+    "official_LOC_page_metadata_description": 222,
+    "official_LOC_TEI_pageinfo": 5
+  },
+  "model_predictions_used_as_training_text": false,
+  "all_images_stored_on_c": true,
+  "copied_gib": 2.2937894323840737,
+  "free_gib_after": 186.09734344482422,
+  "rejected": {
+    "label_or_provenance": 3468
+  }
+}

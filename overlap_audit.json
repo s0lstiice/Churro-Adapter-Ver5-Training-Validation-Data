@@ -1,0 +1,361 @@
+{
+  "schema_version": "churro_cross_stage_leakage_audit.v1",
+  "identity_basis": "exact decoded-file bytes via SHA-256",
+  "counts": {
+    "train_validation": 6,
+    "train_evaluation_only": 4,
+    "validation_evaluation_only": 0
+  },
+  "protected_unseen100_training_overlap": 0,
+  "premature_omission45_training_overlap": 4,
+  "interpretation": {
+    "protected_unseen100": "clean by exact image hash",
+    "epoch22_validation": "six images were used for training in earlier epochs; do not treat the entire 250-page epoch-22 validation split as unseen across the weight lineage",
+    "premature_omission45": "four images were used in epoch-22 training; report clean and overlapping subsets separately"
+  },
+  "overlaps": {
+    "train_validation": [
+      {
+        "image_sha256": "069af2529f05f71b038f4d25c45ee368decef4eb0964fb68bf7d13381d2dce6f",
+        "memberships": [
+          {
+            "stage": "epoch01_19_mixed_scale",
+            "role": "train",
+            "id": "mal1466200_page_001",
+            "page_id": "mal1466200_page_001",
+            "item_id": "mal1466200",
+            "task_type": "page",
+            "manifest": "manifests/epoch01_19_mixed_scale/train.jsonl"
+          },
+          {
+            "stage": "epoch20_first_occurrence_grounding",
+            "role": "train",
+            "id": "mal1466200_page_001",
+            "page_id": "mal1466200_page_001",
+            "item_id": "mal1466200",
+            "task_type": "page",
+            "manifest": "manifests/epoch20_first_occurrence_grounding/train.jsonl"
+          },
+          {
+            "stage": "epoch21_learned_visual_grounding",
+            "role": "train",
+            "id": "mal1466200_page_001",
+            "page_id": "mal1466200_page_001",
+            "item_id": "mal1466200",
+            "task_type": "page",
+            "manifest": "manifests/epoch21_learned_visual_grounding/train.jsonl"
+          },
+          {
+            "stage": "epoch22_expanded_visual_grounding",
+            "role": "validation",
+            "id": "mal1466200_page_001",
+            "page_id": "mal1466200_page_001",
+            "item_id": "mal1466200",
+            "task_type": "page",
+            "manifest": "manifests/epoch22_expanded_visual_grounding/validation.jsonl"
+          }
+        ]
+      },
+      {
+        "image_sha256": "28b2c9dec9e4a71f7f54abd63aefc24b6d88eee79749ef536b1b0982522e88f0",
+        "memberships": [
+          {
+            "stage": "epoch01_19_mixed_scale",
+            "role": "train",
+            "id": "mal1468000_page_001",
+            "page_id": "mal1468000_page_001",
+            "item_id": "mal1468000",
+            "task_type": "page",
+            "manifest": "manifests/epoch01_19_mixed_scale/train.jsonl"
+          },
+          {
+            "stage": "epoch20_first_occurrence_grounding",
+            "role": "train",
+            "id": "mal1468000_page_001",
+            "page_id": "mal1468000_page_001",
+            "item_id": "mal1468000",
+            "task_type": "page",
+            "manifest": "manifests/epoch20_first_occurrence_grounding/train.jsonl"
+          },
+          {
+            "stage": "epoch21_learned_visual_grounding",
+            "role": "train",
+            "id": "mal1468000_page_001",
+            "page_id": "mal1468000_page_001",
+            "item_id": "mal1468000",
+            "task_type": "page",
+            "manifest": "manifests/epoch21_learned_visual_grounding/train.jsonl"
+          },
+          {
+            "stage": "epoch22_expanded_visual_grounding",
+            "role": "validation",
+            "id": "mal1468000_page_001",
+            "page_id": "mal1468000_page_001",
+            "item_id": "mal1468000",
+            "task_type": "page",
+            "manifest": "manifests/epoch22_expanded_visual_grounding/validation.jsonl"
+          }
+        ]
+      },
+      {
+        "image_sha256": "2fe6944afab5666da331e94215da87bb61436ed78d6ce7f81effc454754589e9",
+        "memberships": [
+          {
+            "stage": "epoch01_19_mixed_scale",
+            "role": "train",
+            "id": "mal1477000_page_001",
+            "page_id": "mal1477000_page_001",
+            "item_id": "mal1477000",
+            "task_type": "page",
+            "manifest": "manifests/epoch01_19_mixed_scale/train.jsonl"
+          },
+          {
+            "stage": "epoch20_first_occurrence_grounding",
+            "role": "train",
+            "id": "mal1477000_page_001",
+            "page_id": "mal1477000_page_001",
+            "item_id": "mal1477000",
+            "task_type": "page",
+            "manifest": "manifests/epoch20_first_occurrence_grounding/train.jsonl"
+          },
+          {
+            "stage": "epoch21_learned_visual_grounding",
+            "role": "train",
+            "id": "mal1477000_page_001",
+            "page_id": "mal1477000_page_001",
+            "item_id": "mal1477000",
+            "task_type": "page",
+            "manifest": "manifests/epoch21_learned_visual_grounding/train.jsonl"
+          },
+          {
+            "stage": "epoch22_expanded_visual_grounding",
+            "role": "validation",
+            "id": "mal1477000_page_001",
+            "page_id": "mal1477000_page_001",
+            "item_id": "mal1477000",
+            "task_type": "page",
+            "manifest": "manifests/epoch22_expanded_visual_grounding/validation.jsonl"
+          }
+        ]
+      },
+      {
+        "image_sha256": "3028c61ef616a8c96b341b62cd03fbaf73b61458af802d5579ed565f69c21816",
+        "memberships": [
+          {
+            "stage": "epoch01_19_mixed_scale",
+            "role": "train",
+            "id": "mal1469000_page_001",
+            "page_id": "mal1469000_page_001",
+            "item_id": "mal1469000",
+            "task_type": "page",
+            "manifest": "manifests/epoch01_19_mixed_scale/train.jsonl"
+          },
+          {
+            "stage": "epoch20_first_occurrence_grounding",
+            "role": "train",
+            "id": "mal1469000_page_001",
+            "page_id": "mal1469000_page_001",
+            "item_id": "mal1469000",
+            "task_type": "page",
+            "manifest": "manifests/epoch20_first_occurrence_grounding/train.jsonl"
+          },
+          {
+            "stage": "epoch21_learned_visual_grounding",
+            "role": "train",
+            "id": "mal1469000_page_001",
+            "page_id": "mal1469000_page_001",
+            "item_id": "mal1469000",
+            "task_type": "page",
+            "manifest": "manifests/epoch21_learned_visual_grounding/train.jsonl"
+          },
+          {
+            "stage": "epoch22_expanded_visual_grounding",
+            "role": "validation",
+            "id": "mal1469000_page_001",
+            "page_id": "mal1469000_page_001",
+            "item_id": "mal1469000",
+            "task_type": "page",
+            "manifest": "manifests/epoch22_expanded_visual_grounding/validation.jsonl"
+          }
+        ]
+      },
+      {
+        "image_sha256": "3e003fc08ec0da4bd24584bb1a03b51d55e4e200913bb3e86f614b6fc04f104f",
+        "memberships": [
+          {
+            "stage": "epoch01_19_mixed_scale",
+            "role": "train",
+            "id": "mal1468000_page_002",
+            "page_id": "mal1468000_page_002",
+            "item_id": "mal1468000",
+            "task_type": "page",
+            "manifest": "manifests/epoch01_19_mixed_scale/train.jsonl"
+          },
+          {
+            "stage": "epoch20_first_occurrence_grounding",
+            "role": "train",
+            "id": "mal1468000_page_002",
+            "page_id": "mal1468000_page_002",
+            "item_id": "mal1468000",
+            "task_type": "page",
+            "manifest": "manifests/epoch20_first_occurrence_grounding/train.jsonl"
+          },
+          {
+            "stage": "epoch21_learned_visual_grounding",
+            "role": "train",
+            "id": "mal1468000_page_002",
+            "page_id": "mal1468000_page_002",
+            "item_id": "mal1468000",
+            "task_type": "page",
+            "manifest": "manifests/epoch21_learned_visual_grounding/train.jsonl"
+          },
+          {
+            "stage": "epoch22_expanded_visual_grounding",
+            "role": "validation",
+            "id": "mal1468000_page_002",
+            "page_id": "mal1468000_page_002",
+            "item_id": "mal1468000",
+            "task_type": "page",
+            "manifest": "manifests/epoch22_expanded_visual_grounding/validation.jsonl"
+          }
+        ]
+      },
+      {
+        "image_sha256": "4b3df7960a1c02b889c777f15d959976f0e0da43e6be53489d552b6a7a362959",
+        "memberships": [
+          {
+            "stage": "epoch01_19_mixed_scale",
+            "role": "train",
+            "id": "mal1466200_page_002",
+            "page_id": "mal1466200_page_002",
+            "item_id": "mal1466200",
+            "task_type": "page",
+            "manifest": "manifests/epoch01_19_mixed_scale/train.jsonl"
+          },
+          {
+            "stage": "epoch20_first_occurrence_grounding",
+            "role": "train",
+            "id": "mal1466200_page_002",
+            "page_id": "mal1466200_page_002",
+            "item_id": "mal1466200",
+            "task_type": "page",
+            "manifest": "manifests/epoch20_first_occurrence_grounding/train.jsonl"
+          },
+          {
+            "stage": "epoch21_learned_visual_grounding",
+            "role": "train",
+            "id": "mal1466200_page_002",
+            "page_id": "mal1466200_page_002",
+            "item_id": "mal1466200",
+            "task_type": "page",
+            "manifest": "manifests/epoch21_learned_visual_grounding/train.jsonl"
+          },
+          {
+            "stage": "epoch22_expanded_visual_grounding",
+            "role": "validation",
+            "id": "mal1466200_page_002",
+            "page_id": "mal1466200_page_002",
+            "item_id": "mal1466200",
+            "task_type": "page",
+            "manifest": "manifests/epoch22_expanded_visual_grounding/validation.jsonl"
+          }
+        ]
+      }
+    ],
+    "train_evaluation_only": [
+      {
+        "image_sha256": "16ce274b4cda3e72b79bd5bec093e04dcf8e34d0f477eb8dc7c629194e1b23b4",
+        "memberships": [
+          {
+            "stage": "epoch22_expanded_visual_grounding",
+            "role": "train",
+            "id": "mal1463400_page_002",
+            "page_id": "mal1463400_page_002",
+            "item_id": "mal1463400",
+            "task_type": "page",
+            "manifest": "manifests/epoch22_expanded_visual_grounding/train.jsonl"
+          },
+          {
+            "stage": "premature_omission45",
+            "role": "evaluation_only",
+            "id": "mal1463400_page_002",
+            "page_id": "mal1463400_page_002",
+            "item_id": "mal1463400",
+            "task_type": "page",
+            "manifest": "manifests/premature_omission45/evaluation_only.jsonl"
+          }
+        ]
+      },
+      {
+        "image_sha256": "1aa53240631b83479e7c73fae7390b639b591a43a3482ab92fd6401a9c0876cd",
+        "memberships": [
+          {
+            "stage": "epoch22_expanded_visual_grounding",
+            "role": "train",
+            "id": "mal1463400_page_001",
+            "page_id": "mal1463400_page_001",
+            "item_id": "mal1463400",
+            "task_type": "page",
+            "manifest": "manifests/epoch22_expanded_visual_grounding/train.jsonl"
+          },
+          {
+            "stage": "premature_omission45",
+            "role": "evaluation_only",
+            "id": "mal1463400_page_001",
+            "page_id": "mal1463400_page_001",
+            "item_id": "mal1463400",
+            "task_type": "page",
+            "manifest": "manifests/premature_omission45/evaluation_only.jsonl"
+          }
+        ]
+      },
+      {
+        "image_sha256": "206ffd3f77eb489a9a4dc62468ab30e89798ec6c383780417a748570f6649b83",
+        "memberships": [
+          {
+            "stage": "epoch22_expanded_visual_grounding",
+            "role": "train",
+            "id": "mal1468500_page_001",
+            "page_id": "mal1468500_page_001",
+            "item_id": "mal1468500",
+            "task_type": "page",
+            "manifest": "manifests/epoch22_expanded_visual_grounding/train.jsonl"
+          },
+          {
+            "stage": "premature_omission45",
+            "role": "evaluation_only",
+            "id": "mal1468500_page_001",
+            "page_id": "mal1468500_page_001",
+            "item_id": "mal1468500",
+            "task_type": "page",
+            "manifest": "manifests/premature_omission45/evaluation_only.jsonl"
+          }
+        ]
+      },
+      {
+        "image_sha256": "31a9b0248c1315c59d93b06c07bbd8471d3b217cc5638367b5079a74af81f0a8",
+        "memberships": [
+          {
+            "stage": "epoch22_expanded_visual_grounding",
+            "role": "train",
+            "id": "mal1469200_page_001",
+            "page_id": "mal1469200_page_001",
+            "item_id": "mal1469200",
+            "task_type": "page",
+            "manifest": "manifests/epoch22_expanded_visual_grounding/train.jsonl"
+          },
+          {
+            "stage": "premature_omission45",
+            "role": "evaluation_only",
+            "id": "mal1469200_page_001",
+            "page_id": "mal1469200_page_001",
+            "item_id": "mal1469200",
+            "task_type": "page",
+            "manifest": "manifests/premature_omission45/evaluation_only.jsonl"
+          }
+        ]
+      }
+    ],
+    "validation_evaluation_only": []
+  }
+}
