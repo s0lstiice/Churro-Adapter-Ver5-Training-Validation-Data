@@ -1,0 +1,35 @@
+{
+  "schema_version": "churro_named_version_layout.v1",
+  "version_names": {
+    "VerA": {
+      "historical": "epochs 1-19",
+      "description": "original mixed-scale line and page fine-tuning"
+    },
+    "VerB": {
+      "historical": "epoch 20",
+      "description": "first-occurrence grounding continuation"
+    },
+    "VerC": {
+      "historical": "epoch 21",
+      "description": "learned visual-grounding continuation"
+    },
+    "Version5": {
+      "historical": "epoch 22",
+      "description": "expanded visual-grounding continuation; promoted current model"
+    }
+  },
+  "rows": 7410,
+  "materialized_image_paths": 6123,
+  "counts": {
+    "PrematureOmission45_evaluation_only_rows": 45,
+    "ProtectedUnseen100_evaluation_only_rows": 100,
+    "VerA_train_rows": 3000,
+    "VerA_validation_rows": 281,
+    "VerB_train_rows": 600,
+    "VerB_validation_rows": 17,
+    "VerC_train_rows": 600,
+    "VerC_validation_rows": 17,
+    "Version5_train_rows": 2500,
+    "Version5_validation_rows": 250
+  }
+}

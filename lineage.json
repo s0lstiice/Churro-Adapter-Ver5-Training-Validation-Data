@@ -2,37 +2,37 @@
   "base": "stanford-oval/churro-3B",
   "stages": [
     {
-      "name": "epoch01_19_mixed_scale",
-      "epochs": "1-19",
+      "name": "VerA",
+      "historical_training_stage": "epochs 1-19",
       "parent": "stanford-oval/churro-3B",
       "note": "The same mixed-scale manifests were used throughout epochs 1-19."
     },
     {
-      "name": "epoch20_first_occurrence_grounding",
-      "epochs": "20",
-      "parent": "checkpoint-epoch-19",
+      "name": "VerB",
+      "historical_training_stage": "epoch 20",
+      "parent": "VerA",
       "note": "Official per-page text only; first-occurrence objective added."
     },
     {
-      "name": "epoch21_learned_visual_grounding",
-      "epochs": "21",
-      "parent": "checkpoint-epoch-20",
+      "name": "VerC",
+      "historical_training_stage": "epoch 21",
+      "parent": "VerB",
       "note": "Same 600/17 page corpus as epoch 20; resumed after page checkpoint 200."
     },
     {
-      "name": "epoch22_expanded_visual_grounding",
-      "epochs": "22",
-      "parent": "checkpoint-epoch-21",
+      "name": "Version5",
+      "historical_training_stage": "epoch 22",
+      "parent": "VerC",
       "note": "Expanded, item-disjoint full-page corpus used by the promoted adapter."
     }
   ],
   "evaluation_only": [
     {
-      "name": "protected_unseen100",
+      "name": "ProtectedUnseen100",
       "purpose": "protected model-comparison holdout; never optimized on"
     },
     {
-      "name": "premature_omission45",
+      "name": "PrematureOmission45",
       "purpose": "targeted omission benchmark; never optimized on"
     }
   ]

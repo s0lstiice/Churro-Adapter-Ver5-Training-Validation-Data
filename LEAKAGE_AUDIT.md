@@ -2,7 +2,7 @@
 
 Identity was checked using exact SHA-256 image hashes across every compiled
 manifest. Individual dataset builders checked their own split boundaries, but
-the promoted checkpoint inherits all earlier stages, so cross-stage checks are
+Version5 inherits VerA, VerB, and VerC, so cross-version checks are
 also required.
 
 ## Findings
@@ -13,13 +13,13 @@ also required.
 - Training versus the 45-page omission benchmark: **4 overlaps**.
 
 The protected unseen-100 benchmark remains clean by exact image hash. The
-complete epoch-22 validation split is not wholly unseen across the inherited
+complete Version5 validation split is not wholly unseen across the inherited
 weight lineage, because six of its pages were used in earlier training. The
-omission benchmark contains four pages used during epoch-22 training. Metrics
+omission benchmark contains four pages used during Version5 training. Metrics
 for those two sets must either exclude the listed pages or label the results as
 partially contaminated.
 
-## Epoch-22 validation pages seen during earlier training
+## Version5 validation pages seen during earlier training
 
 - `mal1466200_page_001`
 - `mal1466200_page_002`
