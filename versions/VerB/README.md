@@ -1,6 +1,5 @@
 # VerB data
 
-- Historical internal stage: epoch 20
 - Purpose: first-occurrence grounding continuation
 - Training manifest rows: 600
 - Validation manifest rows: 17
