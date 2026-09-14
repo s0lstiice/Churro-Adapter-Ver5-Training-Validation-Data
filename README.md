@@ -2,7 +2,7 @@
 
 This bundle contains the training, optimization-validation, and separately
 marked evaluation-only data used across the complete weight lineage of the
-promoted **Churro Adapter Version5**.
+promoted **Churro Adapter Version5** (see https://github.com/s0lstiice/Churro-Adapter-Ver5).
 
 ## Scope
 
