@@ -1,6 +1,5 @@
 # VerC data
 
-- Historical internal stage: epoch 21
 - Purpose: learned visual-grounding continuation
 - Training manifest rows: 600
 - Validation manifest rows: 17
