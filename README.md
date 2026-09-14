@@ -7,12 +7,12 @@ throughout this package.
 
 ## Scope
 
-- **VerA** (historical epochs 1-19): mixed-scale corpus with 2,400 line rows and 600 page rows for
+- **VerA**: mixed-scale corpus with 2,400 line rows and 600 page rows for
   training, plus 264 line and 17 page validation rows.
-- **VerB** (historical epoch 20): 600 official-text training page rows and 17 validation pages, used
+- **VerB**: 600 official-text training page rows and 17 validation pages, used
   for first-occurrence grounding.
-- **VerC** (historical epoch 21): the same 600/17 page corpus, used for learned visual grounding.
-- **Version5** (historical epoch 22): 2,500 full-page training rows and 250 full-page validation rows. This is the promoted model.
+- **VerC**: the same 600/17 page corpus, used for learned visual grounding.
+- **Version5**: 2,500 full-page training rows and 250 full-page validation rows. This is the promoted model.
 - Evaluation only: the protected unseen-100 set and 45-page premature-omission
   benchmark. These are isolated under `evaluation/` and
   were not gradient-bearing data.
