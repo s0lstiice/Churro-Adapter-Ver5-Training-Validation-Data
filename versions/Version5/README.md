@@ -1,6 +1,5 @@
 # Version5 data
 
-- Historical internal stage: epoch 22
 - Purpose: expanded visual-grounding continuation; promoted current model
 - Training manifest rows: 2500
 - Validation manifest rows: 250
