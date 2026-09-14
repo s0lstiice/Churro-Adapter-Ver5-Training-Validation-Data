@@ -1,6 +1,5 @@
 # VerA data
 
-- Historical internal stage: epochs 1-19
 - Purpose: original mixed-scale line and page fine-tuning
 - Training manifest rows: 3000
 - Validation manifest rows: 281
